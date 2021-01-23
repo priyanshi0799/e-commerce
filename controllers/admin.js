@@ -13,20 +13,17 @@ exports.postAddProduct = (req, res, next) => {
     const imageUrl = req.body.imageUrl;
     const price = req.body.price;
     const description = req.body.description;
-
     const product = new Product(title, imageUrl, description, price);
     product.save();
     res.redirect('/');
 };
 
 exports.getEditProduct = (req, res, next) => {
-    const editMode = req.query.edit; //always a string
-
-    if (editMode !== true) {
+    const editMode = req.query.edit;
+    if (!editMode) {
         return res.redirect('/');
     }
     const prodId = req.params.productId;
-
     Product.findById(prodId, (product) => {
         if (!product) {
             return res.redirect('/');
