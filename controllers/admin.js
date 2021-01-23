@@ -19,8 +19,7 @@ exports.postAddProduct = (req, res, next) => {
 };
 
 exports.getEditProduct = (req, res, next) => {
-    const editMode = req.query.edit; //will always be a string
-
+    const editMode = req.query.edit;
     if (!editMode) {
         return res.redirect('/');
     }
@@ -63,4 +62,11 @@ exports.getProducts = (req, res, next) => {
             path: '/admin/products',
         });
     });
+};
+
+exports.postDeleteProduct = (req, res, next) => {
+    const prodId = req.body.productId;
+    console.log('Id', prodId);
+    Product.deleteById(prodId);
+    res.redirect('/admin/products');
 };
