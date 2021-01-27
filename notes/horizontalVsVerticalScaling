@@ -1,0 +1,19 @@
+With vertical scaling (a.k.a. “scaling up”), you’re adding more power to your 
+existing machine. 
+In horizontal scaling (a.k.a. “scaling out”), you get the additional resources into 
+your system by adding more machines to your network, sharing the processing and 
+memory workload across multiple devices.
+
+
+One way to look at it is to think of vertical scaling like retiring your Toyota and 
+buying a Ferrari when you need more horsepower. With your super-fast car, you can 
+fly at top speed with the windows down and look amazing. But, while Ferraris are 
+awesome, they’re not very practical, they’re expensive, and at the end of the day, 
+they can only take you so far before they’re out of gas. (Not to mention, there’s 
+only two seats!)
+
+Horizontal scaling gets you that added horsepower – not by ditching the Toyota for 
+the Ferrari, but by adding another vehicle to the mix. In fact, you can think of 
+horizontal scaling like several vehicles you can drive all at once. Maybe none of 
+these machines is a Ferrari, but no one of them needs to be: across the fleet, you 
+have all the horsepower you need.
