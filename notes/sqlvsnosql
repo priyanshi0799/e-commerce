@@ -1,0 +1,21 @@
+DB makes storing and accessing data easy.
+
+SQL -> MYSQL DB
+NoSQL -> MongoDB
+
+SQL (Structured Query Language)
+    Queries are the commands used to interact with the DB.
+    Stores data in the form of tables.
+    Allows to relate different tables.
+    Strong "Data Schema" -> All data in the table has to fit!
+    Data Relation -> One to One, One to Many and Many to Many.
+
+    Eg: SELECT * FROM users WHERE age > 28
+
+NoSQL
+    Here "Collections" are equivalent to "Tables".
+    Inside Collections we have "Documents" -> equivalent to Records in Table
+    They are "Schemaless"
+    Instead of "Relation", we duplicate the data to connect two Collections.
+    No Joining or complicated Nesting queries, hence faster
+
